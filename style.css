@@ -1,0 +1,159 @@
+*{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	box-sizing: border-box;
+	background: ivory;
+}
+
+.logo{
+	padding: 15px 0 0 0;
+}
+.logo img{
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	object-fit: contain;
+}
+.banner video{
+	width: 100%;
+	height: 450px;
+}
+h3{
+	padding: 5px;
+}
+.mee h2{
+	color: skyblue;
+	font-family: Tahoma;
+}
+.mee p{
+	text-align: center;
+	margin: 10px 10px;
+	padding: 0 40px 0 40px;
+	font-size: 20px;
+}
+h2{
+	color: skyblue;
+	font-family: Tahoma;
+	padding: 5px;
+}
+h3{
+	color: skyblue;
+	font-family: Tahoma;
+}
+.glass{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.glasscontainer{
+	position: relative;
+	widith:380px;
+	padding: 40px;
+	border-radius: 20px;
+	backdrop-filter: blur(15pxS);
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+	z-index: 10;
+	overflow: hidden;
+}
+.glasscontainer::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	widith: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05);
+	transform: skewX(-15deg);
+	transition: 0.5s;
+	pointer-events: none;
+
+}
+.glasscontainer: hover:: before{
+	left:120%;
+
+}
+.glasscontainer h3{
+	color: skyblue;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.inputgroup2{
+	position: relative;
+	margin-bottom: 10px;
+
+}
+.inputgroup2 input{
+	widith:100%;
+	padding: 10px 20px;
+	background: skyblue;
+	border: none;
+	outline: none;
+	border-radius: 35px;
+	font-size: 16px;
+	box-shadow: 0 5px 15px skyblue;
+	transition: all 0.3s ease;
+
+}
+.inputgroup2 input::placeholder{
+	color: white;
+}
+.inputgroup2 input:focus{
+	background: yellowgreen;
+	box-shadow: 0 8px 20px yellowgreen;
+}
+.glasscontainer button{
+	width: 50%;
+	padding: 8.5px;
+	border-radius: 20px 0 20px 0;
+	border: none;
+	outline: none;
+	background-color: aquamarine;
+	font-size: 15.5px;
+	cursor: pointer;
+}
+footer{
+	padding: 5px;
+}
+.idea{
+	padding: 5px;
+}
+.idea input{
+	widith:100%;
+	padding: 10px 20px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-radius: 0 35px 0 25px;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	border-bottom: 4px dotted skyblue;
+
+}
+.idea input::placeholder{
+	color: skyblue;
+}
+button{
+	width: 10%;
+	padding: 8.5px;
+	border-radius: 20px 0 20px 0;
+	border: none;
+	outline: none;
+	background-color: aquamarine;
+	font-size: 15.5px;
+	cursor: pointer;
+}
+.gender{
+	padding: 10px;
+}
+.gender input::label{
+	color: skyblue;
+}
